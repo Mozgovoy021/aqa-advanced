@@ -1,13 +1,13 @@
 // Function declaration
 function getRectangleArea(width, height) {
-    return width * height;
+  return width * height;
 }
 
 console.log(getRectangleArea(5, 10));
 
 // Function expression
 const getRectangleAreaExpression = function (width, height) {
-    return width * height;
+  return width * height;
 };
 
 console.log(getRectangleAreaExpression(5, 10));

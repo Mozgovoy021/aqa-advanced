@@ -1,25 +1,25 @@
-import {Book} from './Book.js';
+import { Book } from './Book.js';
 
 export class EBook extends Book {
-    constructor(title, author, year, fileFormat) {
-        super(title, author, year);
-        this.fileFormat = fileFormat;
-    }
+  constructor(title, author, year, fileFormat) {
+    super(title, author, year);
+    this.fileFormat = fileFormat;
+  }
 
-    get fileFormat() {
-        return this._fileFormat;
-    }
+  get fileFormat() {
+    return this._fileFormat;
+  }
 
-    set fileFormat(value) {
-        if (!value) throw new Error('File format is required');
-        this._fileFormat = value;
-    }
+  set fileFormat(value) {
+    if (!value) throw new Error('File format is required');
+    this._fileFormat = value;
+  }
 
-    printInfo() {
-        console.log(`${this.title}, ${this.author}, ${this.year}, ${this.fileFormat}`);
-    }
+  printInfo() {
+    console.log(`${this.title}, ${this.author}, ${this.year}, ${this.fileFormat}`);
+  }
 
-    static fromBook(book, fileFormat) {
-        return new EBook(book.title, book.author, book.year, fileFormat);
-    }
+  static fromBook(book, fileFormat) {
+    return new EBook(book.title, book.author, book.year, fileFormat);
+  }
 }

@@ -1,10 +1,10 @@
-let string = "Hello, World!";
-let number = 42;
-let boolean = true;
-let undefinedValue = undefined;
-let nullValue = null;
-let symbolValue = Symbol("symbol");
-let bigIntValue = 9007199254740991n;
+const string = 'Hello, World!';
+const number = 42;
+const boolean = true;
+const undefinedValue = undefined;
+const nullValue = null;
+const symbolValue = Symbol('symbol');
+const bigIntValue = 9007199254740991n;
 
 console.log(string);
 console.log(number);
