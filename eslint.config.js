@@ -23,5 +23,13 @@ export default [
       eqeqeq: ['error', 'always'],
     },
   },
+  {
+    files: ['**/*.test.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+  },
   eslintConfigPrettier,
 ];
